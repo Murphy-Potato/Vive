@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		344B7A022D9D86C40022D715 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B7A012D9D86C40022D715 /* Tests_iOS.swift */; };
+		344B7A042D9D86C40022D715 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B7A032D9D86C40022D715 /* Tests_iOSLaunchTests.swift */; };
+		344B7A0E2D9D86C40022D715 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B7A0D2D9D86C40022D715 /* Tests_macOS.swift */; };
+		344B7A102D9D86C40022D715 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B7A0F2D9D86C40022D715 /* Tests_macOSLaunchTests.swift */; };
+		344B7A112D9D86C40022D715 /* ViveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B79E92D9D86C10022D715 /* ViveApp.swift */; };
+		344B7A122D9D86C40022D715 /* ViveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B79E92D9D86C10022D715 /* ViveApp.swift */; };
+		344B7A132D9D86C40022D715 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B79EA2D9D86C10022D715 /* ContentView.swift */; };
+		344B7A142D9D86C40022D715 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344B79EA2D9D86C10022D715 /* ContentView.swift */; };
+		344B7A152D9D86C40022D715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B79EB2D9D86C40022D715 /* Assets.xcassets */; };
+		344B7A162D9D86C40022D715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344B79EB2D9D86C40022D715 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		344B79FE2D9D86C40022D715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344B79E42D9D86C10022D715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344B79EF2D9D86C40022D715;
+			remoteInfo = "Vive (iOS)";
+		};
+		344B7A0A2D9D86C40022D715 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 344B79E42D9D86C10022D715 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 344B79F52D9D86C40022D715;
+			remoteInfo = "Vive (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		344B79E92D9D86C10022D715 /* ViveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViveApp.swift; sourceTree = "<group>"; };
+		344B79EA2D9D86C10022D715 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		344B79EB2D9D86C40022D715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		344B79F02D9D86C40022D715 /* Vive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344B79F62D9D86C40022D715 /* Vive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		344B79F82D9D86C40022D715 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		344B79FD2D9D86C40022D715 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344B7A012D9D86C40022D715 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		344B7A032D9D86C40022D715 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		344B7A092D9D86C40022D715 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		344B7A0D2D9D86C40022D715 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		344B7A0F2D9D86C40022D715 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		344B79ED2D9D86C40022D715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79F32D9D86C40022D715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79FA2D9D86C40022D715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B7A062D9D86C40022D715 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344B79E32D9D86C10022D715 = {
+			isa = PBXGroup;
+			children = (
+				344B79E82D9D86C10022D715 /* Shared */,
+				344B79F72D9D86C40022D715 /* macOS */,
+				344B7A002D9D86C40022D715 /* Tests iOS */,
+				344B7A0C2D9D86C40022D715 /* Tests macOS */,
+				344B79F12D9D86C40022D715 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		344B79E82D9D86C10022D715 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				344B79E92D9D86C10022D715 /* ViveApp.swift */,
+				344B79EA2D9D86C10022D715 /* ContentView.swift */,
+				344B79EB2D9D86C40022D715 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		344B79F12D9D86C40022D715 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344B79F02D9D86C40022D715 /* Vive.app */,
+				344B79F62D9D86C40022D715 /* Vive.app */,
+				344B79FD2D9D86C40022D715 /* Tests iOS.xctest */,
+				344B7A092D9D86C40022D715 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		344B79F72D9D86C40022D715 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				344B79F82D9D86C40022D715 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		344B7A002D9D86C40022D715 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				344B7A012D9D86C40022D715 /* Tests_iOS.swift */,
+				344B7A032D9D86C40022D715 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		344B7A0C2D9D86C40022D715 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				344B7A0D2D9D86C40022D715 /* Tests_macOS.swift */,
+				344B7A0F2D9D86C40022D715 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		344B79EF2D9D86C40022D715 /* Vive (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344B7A192D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Vive (iOS)" */;
+			buildPhases = (
+				344B79EC2D9D86C40022D715 /* Sources */,
+				344B79ED2D9D86C40022D715 /* Frameworks */,
+				344B79EE2D9D86C40022D715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vive (iOS)";
+			productName = "Vive (iOS)";
+			productReference = 344B79F02D9D86C40022D715 /* Vive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344B79F52D9D86C40022D715 /* Vive (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344B7A1C2D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Vive (macOS)" */;
+			buildPhases = (
+				344B79F22D9D86C40022D715 /* Sources */,
+				344B79F32D9D86C40022D715 /* Frameworks */,
+				344B79F42D9D86C40022D715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vive (macOS)";
+			productName = "Vive (macOS)";
+			productReference = 344B79F62D9D86C40022D715 /* Vive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		344B79FC2D9D86C40022D715 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344B7A1F2D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				344B79F92D9D86C40022D715 /* Sources */,
+				344B79FA2D9D86C40022D715 /* Frameworks */,
+				344B79FB2D9D86C40022D715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344B79FF2D9D86C40022D715 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 344B79FD2D9D86C40022D715 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		344B7A082D9D86C40022D715 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 344B7A222D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				344B7A052D9D86C40022D715 /* Sources */,
+				344B7A062D9D86C40022D715 /* Frameworks */,
+				344B7A072D9D86C40022D715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344B7A0B2D9D86C40022D715 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 344B7A092D9D86C40022D715 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		344B79E42D9D86C10022D715 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					344B79EF2D9D86C40022D715 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					344B79F52D9D86C40022D715 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					344B79FC2D9D86C40022D715 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 344B79EF2D9D86C40022D715;
+					};
+					344B7A082D9D86C40022D715 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 344B79F52D9D86C40022D715;
+					};
+				};
+			};
+			buildConfigurationList = 344B79E72D9D86C10022D715 /* Build configuration list for PBXProject "Vive" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 344B79E32D9D86C10022D715;
+			productRefGroup = 344B79F12D9D86C40022D715 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				344B79EF2D9D86C40022D715 /* Vive (iOS) */,
+				344B79F52D9D86C40022D715 /* Vive (macOS) */,
+				344B79FC2D9D86C40022D715 /* Tests iOS */,
+				344B7A082D9D86C40022D715 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		344B79EE2D9D86C40022D715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A152D9D86C40022D715 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79F42D9D86C40022D715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A162D9D86C40022D715 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79FB2D9D86C40022D715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B7A072D9D86C40022D715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		344B79EC2D9D86C40022D715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A132D9D86C40022D715 /* ContentView.swift in Sources */,
+				344B7A112D9D86C40022D715 /* ViveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79F22D9D86C40022D715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A142D9D86C40022D715 /* ContentView.swift in Sources */,
+				344B7A122D9D86C40022D715 /* ViveApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B79F92D9D86C40022D715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A042D9D86C40022D715 /* Tests_iOSLaunchTests.swift in Sources */,
+				344B7A022D9D86C40022D715 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		344B7A052D9D86C40022D715 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				344B7A102D9D86C40022D715 /* Tests_macOSLaunchTests.swift in Sources */,
+				344B7A0E2D9D86C40022D715 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		344B79FF2D9D86C40022D715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344B79EF2D9D86C40022D715 /* Vive (iOS) */;
+			targetProxy = 344B79FE2D9D86C40022D715 /* PBXContainerItemProxy */;
+		};
+		344B7A0B2D9D86C40022D715 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 344B79F52D9D86C40022D715 /* Vive (macOS) */;
+			targetProxy = 344B7A0A2D9D86C40022D715 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		344B7A172D9D86C40022D715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		344B7A182D9D86C40022D715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		344B7A1A2D9D86C40022D715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NoahsArk.Vive;
+				PRODUCT_NAME = Vive;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		344B7A1B2D9D86C40022D715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NoahsArk.Vive;
+				PRODUCT_NAME = Vive;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344B7A1D2D9D86C40022D715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NoahsArk.Vive;
+				PRODUCT_NAME = Vive;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		344B7A1E2D9D86C40022D715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = NoahsArk.Vive;
+				PRODUCT_NAME = Vive;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		344B7A202D9D86C40022D715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NoahsArk.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vive (iOS)";
+			};
+			name = Debug;
+		};
+		344B7A212D9D86C40022D715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NoahsArk.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Vive (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		344B7A232D9D86C40022D715 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NoahsArk.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Vive (macOS)";
+			};
+			name = Debug;
+		};
+		344B7A242D9D86C40022D715 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C3598U74JU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.7;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "NoahsArk.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Vive (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		344B79E72D9D86C10022D715 /* Build configuration list for PBXProject "Vive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344B7A172D9D86C40022D715 /* Debug */,
+				344B7A182D9D86C40022D715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344B7A192D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Vive (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344B7A1A2D9D86C40022D715 /* Debug */,
+				344B7A1B2D9D86C40022D715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344B7A1C2D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Vive (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344B7A1D2D9D86C40022D715 /* Debug */,
+				344B7A1E2D9D86C40022D715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344B7A1F2D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344B7A202D9D86C40022D715 /* Debug */,
+				344B7A212D9D86C40022D715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		344B7A222D9D86C40022D715 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				344B7A232D9D86C40022D715 /* Debug */,
+				344B7A242D9D86C40022D715 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 344B79E42D9D86C10022D715 /* Project object */;
+}
